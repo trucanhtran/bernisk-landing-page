@@ -408,7 +408,7 @@ a {
 }
 
 .stats-trend .seperate {
-  height: 1px;
+  height: 1.2px;
   margin-top: 25px;
   background-color: #e9e9e9;
 }
@@ -430,16 +430,17 @@ a {
   margin-left: -3px;
   object-fit: cover;
   border-radius: 50%;
-}
-
-.stats .avatar-1 {
-  background-color: #1f3bb1;
+  background-color: var(--bg-color, #fff);
   font-weight: 450;
   font-size: 0.7rem;
   line-height: 16px;
-  letter-spacing: -0.02rem;
   text-align: center;
+  letter-spacing: -0.02rem;
   color: #ffffff;
+}
+
+.stats .avatar:first-child{
+  margin-left: 0;
 }
 
 .stats .img-block .image {
@@ -478,4 +479,145 @@ a {
   font-size: 1.6rem;
   line-height: 1.88;
   color: #5a6473;
+}
+
+.stats .row-qty {
+  justify-content: space-between;
+  margin-top: 110px;
+  padding: 0 32px;
+}
+
+.stats .qty {
+  font-weight: 600;
+  font-size: 6.4rem;
+  color: #000;
+}
+
+.stats .qty-desc {
+  margin-top: 24px;
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 27px;
+  color: #7b8087;
+}
+
+/* subscription */
+.subscription {
+  margin-top: 90px;
+}
+
+.subscription .body {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 370px;
+  background: #063183;
+  border-radius: 20px;
+} 
+
+.subscription .info {
+  width: 671px;
+  max-width: 100%;
+  padding: 0 80px;
+}
+
+
+.subscription .sub-title {
+  font-weight: 600;
+  font-size: 3.5rem;
+  line-height: 1.5;
+  color: #ffffff;
+}
+
+.subscription .desc {
+  margin-top: 15px;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.88;
+  color: #ffffff;
+  opacity: 0.75;
+}
+
+.subscription .btn {
+  margin-top: 20px;
+  min-width: 151px;
+  background-color: #fff;
+  color: #002366;
+}
+
+.subscription .image {
+  position: absolute;
+  bottom: 0;
+  right: 221px;
+}
+
+/* Footer */
+.footer {
+  margin-top: 55px;
+  padding: 50px 0 58px;
+}
+
+.footer .row {
+  display: flex;
+}
+
+.footer .row-top {
+  gap: 185px;
+}
+
+.footer .heading {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #1c1c1d
+}
+
+.footer .list, .footer .desc {
+  margin-top: 42px;
+}
+
+.footer .item {
+  margin-top: 18px;
+}
+
+.footer .item a, .footer .desc {
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #7a7a7a;
+  white-space: nowrap;
+}
+
+.footer .desc {
+  white-space: normal;
+}
+
+.footer .social {
+  display: flex;
+  margin-top: 40px;
+}
+
+.footer .social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 3px;
+}
+
+.footer .social-link:hover {
+  background: #ebebeb;
+}
+
+.footer .row-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 81px;
+}
+
+.footer .copyright {
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: #c2c2c2
 }
